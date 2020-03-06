@@ -1,0 +1,1282 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		62AE9452FB134876BD91B7A6 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = DC6F12B4AEB64741A995BF05 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				E4FA0F8B89C54721B2949270 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		756ABCD9F65F4E43B2EB08EB /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A402C05B036340209B74CD6C /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				343169748A4047C481980609 /* CMake Rules */,
+			);
+			dependencies = (
+				664F2F7C92324402A9C3EA34 /* PBXTargetDependency */,
+				4EB9075BA6AF42BCB6345D29 /* PBXTargetDependency */,
+				C5CBF0A5B4C742BB87650D28 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0247FBB91E8846CD9EB46833 /* CompilerInstance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C7BDF665A5C44D6978961B7 /* CompilerInstance.cpp */; };
+		37CD134C785245BF8CA75FF1 /* DiagnosticDispatcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B38E7BE0EBCF40BEA644951D /* DiagnosticDispatcher.cpp */; };
+		453A25101DFA48EB97365131 /* rules_dlfcn_port.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3627FD4F299B49DFA04D42AF /* rules_dlfcn_port.cpp */; };
+		4606230FCC7A459998B2CCA0 /* Options.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 652B6809220C4B69BF59E5FA /* Options.cpp */; };
+		4B4ADFF7246A48C0A81E80E2 /* ConfigFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6252CD4AF144CAC9EF42AEF /* ConfigFile.cpp */; };
+		7D751216DB474C2DA895DB01 /* Analytics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5053A1AAB1484B7FA4D72B43 /* Analytics.cpp */; };
+		8255DBA948E047F9A3C848B0 /* Driver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 703F1C256970456AB0C190FC /* Driver.cpp */; };
+		AD70061062964DE889A91290 /* RulesetBasedAnalyzer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 85420BA515BD42A39E8E0E32 /* RulesetBasedAnalyzer.cpp */; };
+		D03D539F35314789B067499F /* RulesetFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 289A90A329424C2C8C8CAE75 /* RulesetFilter.cpp */; };
+		F0C0F01FA3B843F8950E2E1A /* GenericException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D77E2B2E1B894D2DA08405F8 /* GenericException.cpp */; };
+		F4463F47CE844D2788CD58F8 /* Logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34154C21FECC487B9FB44F63 /* Logger.cpp */; };
+		F607072677824DC3A2D65150 /* reporters_dlfcn_port.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6667EFFBD3D47668289F651 /* reporters_dlfcn_port.cpp */; };
+		FF3F9D118B8C45799C0D8AB8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6726C55BDD25457DB1F25219 /* main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0556249B84684E318D5A3BCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E0B58ED4C8B4305A5D1B6F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62AE9452FB134876BD91B7A6;
+			remoteInfo = ZERO_CHECK;
+		};
+		0D7C937AA57C459D9C1F6441 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E0B58ED4C8B4305A5D1B6F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62AE9452FB134876BD91B7A6;
+			remoteInfo = ZERO_CHECK;
+		};
+		1CAD0F20CCF84627A00AA288 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E0B58ED4C8B4305A5D1B6F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 998DB27A37C342F9B45FAED4;
+			remoteInfo = OCLintDriver;
+		};
+		3F44565EEE9443C0A236B8B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E0B58ED4C8B4305A5D1B6F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F17A0451DC12440EA1D2DFE4;
+			remoteInfo = "oclint-0.13.1";
+		};
+		61745F48DBB240CEB66E5812 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E0B58ED4C8B4305A5D1B6F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 998DB27A37C342F9B45FAED4;
+			remoteInfo = OCLintDriver;
+		};
+		D2A39F9B71E0428D89587BCD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E0B58ED4C8B4305A5D1B6F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62AE9452FB134876BD91B7A6;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1DD4BE43E79D4C5296C8A8B1 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		289A90A329424C2C8C8CAE75 /* RulesetFilter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RulesetFilter.cpp; path = lib/RulesetFilter.cpp; sourceTree = SOURCE_ROOT; };
+		34154C21FECC487B9FB44F63 /* Logger.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Logger.cpp; path = lib/Logger.cpp; sourceTree = SOURCE_ROOT; };
+		3627FD4F299B49DFA04D42AF /* rules_dlfcn_port.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = rules_dlfcn_port.cpp; sourceTree = SOURCE_ROOT; };
+		3B8B608CA05F4497BC4D1A4E /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		3C7BDF665A5C44D6978961B7 /* CompilerInstance.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CompilerInstance.cpp; path = lib/CompilerInstance.cpp; sourceTree = SOURCE_ROOT; };
+		480CA060F71E4E1BB78DAD9A /* oclint-0.13.1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "oclint-0.13.1"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5053A1AAB1484B7FA4D72B43 /* Analytics.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Analytics.cpp; path = lib/Analytics.cpp; sourceTree = SOURCE_ROOT; };
+		62BED406BC6E48DA84FA7A4A /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = lib/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		652B6809220C4B69BF59E5FA /* Options.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Options.cpp; path = lib/Options.cpp; sourceTree = SOURCE_ROOT; };
+		6726C55BDD25457DB1F25219 /* main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = main.cpp; sourceTree = SOURCE_ROOT; };
+		703F1C256970456AB0C190FC /* Driver.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Driver.cpp; path = lib/Driver.cpp; sourceTree = SOURCE_ROOT; };
+		85420BA515BD42A39E8E0E32 /* RulesetBasedAnalyzer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RulesetBasedAnalyzer.cpp; path = lib/RulesetBasedAnalyzer.cpp; sourceTree = SOURCE_ROOT; };
+		A6667EFFBD3D47668289F651 /* reporters_dlfcn_port.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = reporters_dlfcn_port.cpp; sourceTree = SOURCE_ROOT; };
+		B38E7BE0EBCF40BEA644951D /* DiagnosticDispatcher.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DiagnosticDispatcher.cpp; path = lib/DiagnosticDispatcher.cpp; sourceTree = SOURCE_ROOT; };
+		B6252CD4AF144CAC9EF42AEF /* ConfigFile.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ConfigFile.cpp; path = lib/ConfigFile.cpp; sourceTree = SOURCE_ROOT; };
+		D5072FD8965E4DFCB9FF1F14 /* libOCLintDriver.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libOCLintDriver.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D77E2B2E1B894D2DA08405F8 /* GenericException.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GenericException.cpp; path = lib/GenericException.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		264C1CB4840F42308E6627B4 = {
+			isa = PBXGroup;
+			children = (
+				64CCE3F2885945798EC7FEA6 /* oclint-0.13.1 */,
+				3CE362936624482AA50BEEEC /* ALL_BUILD */,
+				51FB00EC8D464B9C9C8D08ED /* OCLintDriver */,
+				898D0174418244DFA472274C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3CE362936624482AA50BEEEC /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				97F0902F8CA24BEA97AEB651 /* CMake Rules */,
+				1DD4BE43E79D4C5296C8A8B1 /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		4B8532A23D2A4AD2B39FEE4F /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				6726C55BDD25457DB1F25219 /* main.cpp */,
+				A6667EFFBD3D47668289F651 /* reporters_dlfcn_port.cpp */,
+				3627FD4F299B49DFA04D42AF /* rules_dlfcn_port.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		51FB00EC8D464B9C9C8D08ED /* OCLintDriver */ = {
+			isa = PBXGroup;
+			children = (
+				C287B938D4CD4EBEB2C30098 /* Source Files */,
+				62BED406BC6E48DA84FA7A4A /* CMakeLists.txt */,
+			);
+			name = OCLintDriver;
+			sourceTree = "<group>";
+		};
+		64CCE3F2885945798EC7FEA6 /* oclint-0.13.1 */ = {
+			isa = PBXGroup;
+			children = (
+				4B8532A23D2A4AD2B39FEE4F /* Source Files */,
+				3B8B608CA05F4497BC4D1A4E /* CMakeLists.txt */,
+			);
+			name = "oclint-0.13.1";
+			sourceTree = "<group>";
+		};
+		898D0174418244DFA472274C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				480CA060F71E4E1BB78DAD9A /* oclint-0.13.1 */,
+				D5072FD8965E4DFCB9FF1F14 /* libOCLintDriver.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		97F0902F8CA24BEA97AEB651 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		C287B938D4CD4EBEB2C30098 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				5053A1AAB1484B7FA4D72B43 /* Analytics.cpp */,
+				3C7BDF665A5C44D6978961B7 /* CompilerInstance.cpp */,
+				B6252CD4AF144CAC9EF42AEF /* ConfigFile.cpp */,
+				B38E7BE0EBCF40BEA644951D /* DiagnosticDispatcher.cpp */,
+				703F1C256970456AB0C190FC /* Driver.cpp */,
+				D77E2B2E1B894D2DA08405F8 /* GenericException.cpp */,
+				34154C21FECC487B9FB44F63 /* Logger.cpp */,
+				652B6809220C4B69BF59E5FA /* Options.cpp */,
+				85420BA515BD42A39E8E0E32 /* RulesetBasedAnalyzer.cpp */,
+				289A90A329424C2C8C8CAE75 /* RulesetFilter.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		998DB27A37C342F9B45FAED4 /* OCLintDriver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 281FCA964F0E44CF8D77FF3B /* Build configuration list for PBXNativeTarget "OCLintDriver" */;
+			buildPhases = (
+				FF12C42B3C0843A88836E9FF /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE7060F193394F4480D5B1A4 /* PBXTargetDependency */,
+			);
+			name = OCLintDriver;
+			productName = OCLintDriver;
+			productReference = D5072FD8965E4DFCB9FF1F14 /* libOCLintDriver.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F17A0451DC12440EA1D2DFE4 /* oclint-0.13.1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 756655374A3B4DD789EE860E /* Build configuration list for PBXNativeTarget "oclint-0.13.1" */;
+			buildPhases = (
+				3DC08A417C114A51830348CF /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				652F39F5A550408BA49BB09E /* PBXTargetDependency */,
+				EFEE08D7996243F58268680B /* PBXTargetDependency */,
+			);
+			name = "oclint-0.13.1";
+			productName = "oclint-0.13.1";
+			productReference = 480CA060F71E4E1BB78DAD9A /* oclint-0.13.1 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9E0B58ED4C8B4305A5D1B6F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1130;
+			};
+			buildConfigurationList = 509726151C084D9BB3AE5F48 /* Build configuration list for PBXProject "OCLINT_DRIVER" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 264C1CB4840F42308E6627B4;
+			projectDirPath = "/Users/max/oclint_source-0.13.1/oclint-driver";
+			projectRoot = "";
+			targets = (
+				756ABCD9F65F4E43B2EB08EB /* ALL_BUILD */,
+				62AE9452FB134876BD91B7A6 /* ZERO_CHECK */,
+				F17A0451DC12440EA1D2DFE4 /* oclint-0.13.1 */,
+				998DB27A37C342F9B45FAED4 /* OCLintDriver */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		343169748A4047C481980609 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/max/oclint_source-0.13.1/Driver_proj -f /Users/max/oclint_source-0.13.1/Driver_proj/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		E4FA0F8B89C54721B2949270 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/max/oclint_source-0.13.1/Driver_proj -f /Users/max/oclint_source-0.13.1/Driver_proj/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DC08A417C114A51830348CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF3F9D118B8C45799C0D8AB8 /* main.cpp in Sources */,
+				F607072677824DC3A2D65150 /* reporters_dlfcn_port.cpp in Sources */,
+				453A25101DFA48EB97365131 /* rules_dlfcn_port.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF12C42B3C0843A88836E9FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D751216DB474C2DA895DB01 /* Analytics.cpp in Sources */,
+				0247FBB91E8846CD9EB46833 /* CompilerInstance.cpp in Sources */,
+				4B4ADFF7246A48C0A81E80E2 /* ConfigFile.cpp in Sources */,
+				37CD134C785245BF8CA75FF1 /* DiagnosticDispatcher.cpp in Sources */,
+				8255DBA948E047F9A3C848B0 /* Driver.cpp in Sources */,
+				F0C0F01FA3B843F8950E2E1A /* GenericException.cpp in Sources */,
+				F4463F47CE844D2788CD58F8 /* Logger.cpp in Sources */,
+				4606230FCC7A459998B2CCA0 /* Options.cpp in Sources */,
+				AD70061062964DE889A91290 /* RulesetBasedAnalyzer.cpp in Sources */,
+				D03D539F35314789B067499F /* RulesetFilter.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4EB9075BA6AF42BCB6345D29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F17A0451DC12440EA1D2DFE4 /* oclint-0.13.1 */;
+			targetProxy = 3F44565EEE9443C0A236B8B8 /* PBXContainerItemProxy */;
+		};
+		652F39F5A550408BA49BB09E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62AE9452FB134876BD91B7A6 /* ZERO_CHECK */;
+			targetProxy = 0556249B84684E318D5A3BCB /* PBXContainerItemProxy */;
+		};
+		664F2F7C92324402A9C3EA34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62AE9452FB134876BD91B7A6 /* ZERO_CHECK */;
+			targetProxy = 0D7C937AA57C459D9C1F6441 /* PBXContainerItemProxy */;
+		};
+		C5CBF0A5B4C742BB87650D28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 998DB27A37C342F9B45FAED4 /* OCLintDriver */;
+			targetProxy = 61745F48DBB240CEB66E5812 /* PBXContainerItemProxy */;
+		};
+		EFEE08D7996243F58268680B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 998DB27A37C342F9B45FAED4 /* OCLintDriver */;
+			targetProxy = 1CAD0F20CCF84627A00AA288 /* PBXContainerItemProxy */;
+		};
+		FE7060F193394F4480D5B1A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62AE9452FB134876BD91B7A6 /* ZERO_CHECK */;
+			targetProxy = D2A39F9B71E0428D89587BCD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		004A53AE5A3E446F9D759A5B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/max/oclint_source-0.13.1/Driver_proj/bin/MinSizeRel";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/include",
+					"/Users/max/oclint_source-0.13.1/oclint-driver/../oclint-core/include",
+					/include,
+					/usr/local/opt/openssl/include,
+					"/Users/max/oclint_source-0.13.1/oclint-driver/include",
+				);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/max/oclint_source-0.13.1/build/llvm-install/lib ../build/oclint-core/lib /usr/local/opt/openssl/lib";
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib",
+					"../build/oclint-core/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					"../build/oclint-core/lib",
+					"/usr/local/opt/openssl/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/usr/local/opt/openssl/lib,
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DCOUNTLY_ANALYTICS",
+					"-std=c++11",
+					"-stdlib=libc++",
+					"-fno-rtti",
+					"-Wno-c++11-extensions",
+					"-fPIC",
+					"-fcolor-diagnostics",
+					"-fvisibility-inlines-hidden",
+					"-mmacosx-version-min=10.12",
+					"-DNDEBUG",
+					"-DLLVM_BUILD_GLOBAL_ISEL",
+					"-D__STDC_CONSTANT_MACROS",
+					"-D__STDC_FORMAT_MACROS",
+					"-D__STDC_LIMIT_MACROS",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/max/oclint_source-0.13.1/Driver_proj/lib/MinSizeRel/libOCLintDriver.a",
+					"-lOCLintRuleSet",
+					"-lOCLintCore",
+					"-lclangStaticAnalyzerFrontend",
+					"-lclangStaticAnalyzerCheckers",
+					"-lclangStaticAnalyzerCore",
+					"-lclangRewriteFrontend",
+					"-lclangRewrite",
+					"-lclangTooling",
+					"-lclangFrontend",
+					"-lclangDriver",
+					"-lclangSerialization",
+					"-lclangParse",
+					"-lclangSema",
+					"-lclangAnalysis",
+					"-lclangEdit",
+					"-lclangASTMatchers",
+					"-lclangAST",
+					"-lclangLex",
+					"-lclangBasic",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMAsmParser.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMBitReader.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMInstrumentation.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMMCParser.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMOption.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMSupport.a",
+					"-lCountly",
+					/usr/local/opt/openssl/lib/libssl.a,
+					/usr/local/opt/openssl/lib/libcrypto.a,
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMTransformUtils.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMAnalysis.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMProfileData.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMObject.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMBitReader.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMMCParser.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMCore.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMBinaryFormat.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMMC.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMSupport.a",
+					"-lcurses",
+					"-lz",
+					"-lm",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMDemangle.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "oclint-0.13.1";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/oclint_source-0.13.1/Driver_proj";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		2D990C7796CA43FFA37951E1 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/oclint_source-0.13.1/Driver_proj";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		395237A249CB411CB1F5825C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/include",
+					"/Users/max/oclint_source-0.13.1/oclint-driver/../oclint-core/include",
+					/include,
+					/usr/local/opt/openssl/include,
+					"/Users/max/oclint_source-0.13.1/oclint-driver/include",
+					"\"$(SRCROOT)/../countly/include\"",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DCOUNTLY_ANALYTICS",
+					"-std=c++11",
+					"-stdlib=libc++",
+					"-fno-rtti",
+					"-Wno-c++11-extensions",
+					"-fPIC",
+					"-fcolor-diagnostics",
+					"-fvisibility-inlines-hidden",
+					"-mmacosx-version-min=10.12",
+					"-DLLVM_BUILD_GLOBAL_ISEL",
+					"-D__STDC_CONSTANT_MACROS",
+					"-D__STDC_FORMAT_MACROS",
+					"-D__STDC_LIMIT_MACROS",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = OCLintDriver;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/oclint_source-0.13.1/Driver_proj/lib";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		3C3F1C75E86F47D9A17302C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/max/oclint_source-0.13.1/Driver_proj/build";
+			};
+			name = Debug;
+		};
+		49E02823E9A74232A592F75B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/include",
+					"/Users/max/oclint_source-0.13.1/oclint-driver/../oclint-core/include",
+					/include,
+					/usr/local/opt/openssl/include,
+					"/Users/max/oclint_source-0.13.1/oclint-driver/include",
+					"\"$(SRCROOT)/../countly/include\"",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DCOUNTLY_ANALYTICS",
+					"-std=c++11",
+					"-stdlib=libc++",
+					"-fno-rtti",
+					"-Wno-c++11-extensions",
+					"-fPIC",
+					"-fcolor-diagnostics",
+					"-fvisibility-inlines-hidden",
+					"-mmacosx-version-min=10.12",
+					"-DNDEBUG",
+					"-DLLVM_BUILD_GLOBAL_ISEL",
+					"-D__STDC_CONSTANT_MACROS",
+					"-D__STDC_FORMAT_MACROS",
+					"-D__STDC_LIMIT_MACROS",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = OCLintDriver;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/oclint_source-0.13.1/Driver_proj/lib";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		5441F4CA3C4047DFA062382F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/max/oclint_source-0.13.1/Driver_proj/build";
+			};
+			name = Release;
+		};
+		58DF276949C34DDBB732E95F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/max/oclint_source-0.13.1/Driver_proj/bin/Release";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/include",
+					"/Users/max/oclint_source-0.13.1/oclint-driver/../oclint-core/include",
+					/include,
+					/usr/local/opt/openssl/include,
+					"/Users/max/oclint_source-0.13.1/oclint-driver/include",
+				);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/max/oclint_source-0.13.1/build/llvm-install/lib ../build/oclint-core/lib /usr/local/opt/openssl/lib";
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib",
+					"../build/oclint-core/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					"../build/oclint-core/lib",
+					"/usr/local/opt/openssl/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/usr/local/opt/openssl/lib,
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DCOUNTLY_ANALYTICS",
+					"-std=c++11",
+					"-stdlib=libc++",
+					"-fno-rtti",
+					"-Wno-c++11-extensions",
+					"-fPIC",
+					"-fcolor-diagnostics",
+					"-fvisibility-inlines-hidden",
+					"-mmacosx-version-min=10.12",
+					"-DNDEBUG",
+					"-DLLVM_BUILD_GLOBAL_ISEL",
+					"-D__STDC_CONSTANT_MACROS",
+					"-D__STDC_FORMAT_MACROS",
+					"-D__STDC_LIMIT_MACROS",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/max/oclint_source-0.13.1/Driver_proj/lib/Release/libOCLintDriver.a",
+					"-lOCLintRuleSet",
+					"-lOCLintCore",
+					"-lclangStaticAnalyzerFrontend",
+					"-lclangStaticAnalyzerCheckers",
+					"-lclangStaticAnalyzerCore",
+					"-lclangRewriteFrontend",
+					"-lclangRewrite",
+					"-lclangTooling",
+					"-lclangFrontend",
+					"-lclangDriver",
+					"-lclangSerialization",
+					"-lclangParse",
+					"-lclangSema",
+					"-lclangAnalysis",
+					"-lclangEdit",
+					"-lclangASTMatchers",
+					"-lclangAST",
+					"-lclangLex",
+					"-lclangBasic",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMAsmParser.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMBitReader.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMInstrumentation.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMMCParser.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMOption.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMSupport.a",
+					"-lCountly",
+					/usr/local/opt/openssl/lib/libssl.a,
+					/usr/local/opt/openssl/lib/libcrypto.a,
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMTransformUtils.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMAnalysis.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMProfileData.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMObject.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMBitReader.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMMCParser.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMCore.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMBinaryFormat.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMMC.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMSupport.a",
+					"-lcurses",
+					"-lz",
+					"-lm",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMDemangle.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "oclint-0.13.1";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/oclint_source-0.13.1/Driver_proj";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		5A5693C31E9B457DAAE0ACE1 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/include",
+					"/Users/max/oclint_source-0.13.1/oclint-driver/../oclint-core/include",
+					/include,
+					/usr/local/opt/openssl/include,
+					"/Users/max/oclint_source-0.13.1/oclint-driver/include",
+					"\"$(SRCROOT)/../countly/include\"",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DCOUNTLY_ANALYTICS",
+					"-std=c++11",
+					"-stdlib=libc++",
+					"-fno-rtti",
+					"-Wno-c++11-extensions",
+					"-fPIC",
+					"-fcolor-diagnostics",
+					"-fvisibility-inlines-hidden",
+					"-mmacosx-version-min=10.12",
+					"-DNDEBUG",
+					"-DLLVM_BUILD_GLOBAL_ISEL",
+					"-D__STDC_CONSTANT_MACROS",
+					"-D__STDC_FORMAT_MACROS",
+					"-D__STDC_LIMIT_MACROS",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = OCLintDriver;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/oclint_source-0.13.1/Driver_proj/lib";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		65E4EF4488A24208AB7BC529 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/max/oclint_source-0.13.1/Driver_proj/bin/Debug";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/include",
+					"/Users/max/oclint_source-0.13.1/oclint-driver/../oclint-core/include",
+					/include,
+					/usr/local/opt/openssl/include,
+					"/Users/max/oclint_source-0.13.1/oclint-driver/include",
+				);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/max/oclint_source-0.13.1/build/llvm-install/lib ../build/oclint-core/lib /usr/local/opt/openssl/lib";
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib",
+					"../build/oclint-core/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					"../build/oclint-core/lib",
+					"/usr/local/opt/openssl/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/usr/local/opt/openssl/lib,
+					"\"$(SRCROOT)/../build/countly/lib\"",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DCOUNTLY_ANALYTICS",
+					"-std=c++11",
+					"-stdlib=libc++",
+					"-fno-rtti",
+					"-Wno-c++11-extensions",
+					"-fPIC",
+					"-fcolor-diagnostics",
+					"-fvisibility-inlines-hidden",
+					"-mmacosx-version-min=10.12",
+					"-DLLVM_BUILD_GLOBAL_ISEL",
+					"-D__STDC_CONSTANT_MACROS",
+					"-D__STDC_FORMAT_MACROS",
+					"-D__STDC_LIMIT_MACROS",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/max/oclint_source-0.13.1/Driver_proj/lib/Debug/libOCLintDriver.a",
+					"-lOCLintRuleSet",
+					"-lOCLintCore",
+					"-lclangStaticAnalyzerFrontend",
+					"-lclangStaticAnalyzerCheckers",
+					"-lclangStaticAnalyzerCore",
+					"-lclangRewriteFrontend",
+					"-lclangRewrite",
+					"-lclangTooling",
+					"-lclangFrontend",
+					"-lclangDriver",
+					"-lclangSerialization",
+					"-lclangParse",
+					"-lclangSema",
+					"-lclangAnalysis",
+					"-lclangEdit",
+					"-lclangASTMatchers",
+					"-lclangAST",
+					"-lclangLex",
+					"-lclangBasic",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMAsmParser.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMBitReader.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMInstrumentation.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMMCParser.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMOption.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMSupport.a",
+					"-lCountly",
+					/usr/local/opt/openssl/lib/libssl.a,
+					/usr/local/opt/openssl/lib/libcrypto.a,
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMTransformUtils.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMAnalysis.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMProfileData.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMObject.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMBitReader.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMMCParser.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMCore.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMBinaryFormat.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMMC.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMSupport.a",
+					"-lcurses",
+					"-lz",
+					"-lm",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMDemangle.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "oclint-0.13.1";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/oclint_source-0.13.1/Driver_proj";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		6C5FAE10440E4EAA9BE821EE /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/oclint_source-0.13.1/Driver_proj";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		7FED8921894145D98134DFDC /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/max/oclint_source-0.13.1/Driver_proj/bin/RelWithDebInfo";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/include",
+					"/Users/max/oclint_source-0.13.1/oclint-driver/../oclint-core/include",
+					/include,
+					/usr/local/opt/openssl/include,
+					"/Users/max/oclint_source-0.13.1/oclint-driver/include",
+				);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/max/oclint_source-0.13.1/build/llvm-install/lib ../build/oclint-core/lib /usr/local/opt/openssl/lib";
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib",
+					"../build/oclint-core/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					"../build/oclint-core/lib",
+					"/usr/local/opt/openssl/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/usr/local/opt/openssl/lib,
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DCOUNTLY_ANALYTICS",
+					"-std=c++11",
+					"-stdlib=libc++",
+					"-fno-rtti",
+					"-Wno-c++11-extensions",
+					"-fPIC",
+					"-fcolor-diagnostics",
+					"-fvisibility-inlines-hidden",
+					"-mmacosx-version-min=10.12",
+					"-DNDEBUG",
+					"-DLLVM_BUILD_GLOBAL_ISEL",
+					"-D__STDC_CONSTANT_MACROS",
+					"-D__STDC_FORMAT_MACROS",
+					"-D__STDC_LIMIT_MACROS",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/max/oclint_source-0.13.1/Driver_proj/lib/RelWithDebInfo/libOCLintDriver.a",
+					"-lOCLintRuleSet",
+					"-lOCLintCore",
+					"-lclangStaticAnalyzerFrontend",
+					"-lclangStaticAnalyzerCheckers",
+					"-lclangStaticAnalyzerCore",
+					"-lclangRewriteFrontend",
+					"-lclangRewrite",
+					"-lclangTooling",
+					"-lclangFrontend",
+					"-lclangDriver",
+					"-lclangSerialization",
+					"-lclangParse",
+					"-lclangSema",
+					"-lclangAnalysis",
+					"-lclangEdit",
+					"-lclangASTMatchers",
+					"-lclangAST",
+					"-lclangLex",
+					"-lclangBasic",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMAsmParser.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMBitReader.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMInstrumentation.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMMCParser.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMOption.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMSupport.a",
+					"-lCountly",
+					/usr/local/opt/openssl/lib/libssl.a,
+					/usr/local/opt/openssl/lib/libcrypto.a,
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMTransformUtils.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMAnalysis.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMProfileData.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMObject.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMBitReader.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMMCParser.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMCore.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMBinaryFormat.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMMC.a",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMSupport.a",
+					"-lcurses",
+					"-lz",
+					"-lm",
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/lib/libLLVMDemangle.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "oclint-0.13.1";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/oclint_source-0.13.1/Driver_proj";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		8509689F66664DE39440E197 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/oclint_source-0.13.1/Driver_proj";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		CBB4D4CFD5624372B8F52C14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/oclint_source-0.13.1/Driver_proj";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		CC74CE14C22D4EC2BD1EFD66 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/max/oclint_source-0.13.1/Driver_proj/build";
+			};
+			name = RelWithDebInfo;
+		};
+		D18230548C2C439D8F3B836D /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/oclint_source-0.13.1/Driver_proj";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		D3B3EBCD69FE43BBB0004A9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/oclint_source-0.13.1/Driver_proj";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		DCE8F6F57EAA4BF985A55E5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/oclint_source-0.13.1/Driver_proj";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		EB0619E67D0743AE9490D94D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/max/oclint_source-0.13.1/Driver_proj/build";
+			};
+			name = MinSizeRel;
+		};
+		F943396277C446198B2C5757 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/max/oclint_source-0.13.1/build/llvm-install/include",
+					"/Users/max/oclint_source-0.13.1/oclint-driver/../oclint-core/include",
+					/include,
+					/usr/local/opt/openssl/include,
+					"/Users/max/oclint_source-0.13.1/oclint-driver/include",
+					"\"$(SRCROOT)/../countly/include\"",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DCOUNTLY_ANALYTICS",
+					"-std=c++11",
+					"-stdlib=libc++",
+					"-fno-rtti",
+					"-Wno-c++11-extensions",
+					"-fPIC",
+					"-fcolor-diagnostics",
+					"-fvisibility-inlines-hidden",
+					"-mmacosx-version-min=10.12",
+					"-DNDEBUG",
+					"-DLLVM_BUILD_GLOBAL_ISEL",
+					"-D__STDC_CONSTANT_MACROS",
+					"-D__STDC_FORMAT_MACROS",
+					"-D__STDC_LIMIT_MACROS",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = OCLintDriver;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/oclint_source-0.13.1/Driver_proj/lib";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		FEBF716D5B9A46C2889F83B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/oclint_source-0.13.1/Driver_proj";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		281FCA964F0E44CF8D77FF3B /* Build configuration list for PBXNativeTarget "OCLintDriver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				395237A249CB411CB1F5825C /* Debug */,
+				F943396277C446198B2C5757 /* Release */,
+				49E02823E9A74232A592F75B /* MinSizeRel */,
+				5A5693C31E9B457DAAE0ACE1 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		509726151C084D9BB3AE5F48 /* Build configuration list for PBXProject "OCLINT_DRIVER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C3F1C75E86F47D9A17302C1 /* Debug */,
+				5441F4CA3C4047DFA062382F /* Release */,
+				EB0619E67D0743AE9490D94D /* MinSizeRel */,
+				CC74CE14C22D4EC2BD1EFD66 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		756655374A3B4DD789EE860E /* Build configuration list for PBXNativeTarget "oclint-0.13.1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65E4EF4488A24208AB7BC529 /* Debug */,
+				58DF276949C34DDBB732E95F /* Release */,
+				004A53AE5A3E446F9D759A5B /* MinSizeRel */,
+				7FED8921894145D98134DFDC /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A402C05B036340209B74CD6C /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3B3EBCD69FE43BBB0004A9A /* Debug */,
+				DCE8F6F57EAA4BF985A55E5C /* Release */,
+				2D990C7796CA43FFA37951E1 /* MinSizeRel */,
+				D18230548C2C439D8F3B836D /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DC6F12B4AEB64741A995BF05 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEBF716D5B9A46C2889F83B8 /* Debug */,
+				CBB4D4CFD5624372B8F52C14 /* Release */,
+				6C5FAE10440E4EAA9BE821EE /* MinSizeRel */,
+				8509689F66664DE39440E197 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9E0B58ED4C8B4305A5D1B6F2 /* Project object */;
+}

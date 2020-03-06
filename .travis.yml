@@ -1,0 +1,98 @@
+language: cpp
+
+matrix:
+  include:
+    - os: linux
+      dist: trusty
+      sudo: required
+      env: BUILD="test" MODULE="core" COMPILER="gcc5"
+    - os: linux
+      dist: trusty
+      sudo: required
+      env: BUILD="test" MODULE="metrics" COMPILER="gcc5"
+    - os: linux
+      dist: trusty
+      sudo: required
+      env: BUILD="test" MODULE="rules" DEP="core metrics" COMPILER="gcc5"
+    - os: linux
+      dist: trusty
+      sudo: required
+      env: BUILD="test" MODULE="reporters" DEP="core" COMPILER="gcc5"
+    - os: linux
+      dist: trusty
+      sudo: required
+      env: BUILD="test" MODULE="driver" DEP="core" COMPILER="gcc5"
+    - os: linux
+      dist: trusty
+      sudo: required
+      env: BUILD="build" COMPILER="gcc5"
+    - os: linux
+      dist: trusty
+      sudo: required
+      env: BUILD="docgen" COMPILER="gcc5"
+    - os: osx
+      osx_image: xcode9.2
+      env: BUILD="test" MODULE="core" COMPILER="apple9"
+    - os: osx
+      osx_image: xcode9.2
+      env: BUILD="test" MODULE="metrics" COMPILER="apple9"
+    - os: osx
+      osx_image: xcode9.2
+      env: BUILD="test" MODULE="rules" DEP="core metrics" COMPILER="apple9"
+    - os: osx
+      osx_image: xcode9.2
+      env: BUILD="test" MODULE="reporters" DEP="core" COMPILER="apple9"
+    - os: osx
+      osx_image: xcode9.2
+      env: BUILD="test" MODULE="driver" DEP="core" COMPILER="apple9"
+    - os: osx
+      osx_image: xcode9.2
+      env: BUILD="build" COMPILER="apple9"
+    - os: osx
+      osx_image: xcode9.2
+      env: BUILD="docgen" COMPILER="apple9"
+
+before_install:
+- if [ "$COMPILER" == "gcc5" ]; then
+    sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y;
+    sudo apt-get update -q;
+    sudo apt-get install gcc-5 g++-5 -y;
+    sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 50;
+    sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-5 50;
+  fi
+- if [ "$TRAVIS_OS_NAME" == "osx" ]; then
+    brew update;
+    brew install pyenv;
+    eval "$(pyenv init -)";
+    pyenv install 2.7.6;
+    pyenv global 2.7.6;
+    pyenv rehash;
+    pip install cpp-coveralls;
+    pyenv rehash;
+  else
+    sudo pip install --upgrade cpp-coveralls;
+  fi
+- if [ "$TRAVIS_OS_NAME" == "osx" ]; then
+    brew install ninja;
+  else
+    sudo apt-get install ninja-build -y;
+  fi
+
+script:
+  - cd oclint-scripts
+  - ./travis $BUILD $MODULE $DEP
+  - cd ..
+
+after_success:
+  - if [ $BUILD == test ] && [ $MODULE != driver ]; then
+      if [ $TRAVIS_OS_NAME == osx ]; then
+        coveralls --gcov $PWD/build/llvm-install/bin/llvm-cov --gcov-options gcov --include oclint-${MODULE}/ --exclude oclint-${MODULE}/test;
+      else
+        coveralls --include oclint-${MODULE}/ --exclude oclint-${MODULE}/test;
+      fi
+    fi
+
+addons:
+  artifacts:
+    paths:
+      - $(ls build/oclint-*.tar.gz)

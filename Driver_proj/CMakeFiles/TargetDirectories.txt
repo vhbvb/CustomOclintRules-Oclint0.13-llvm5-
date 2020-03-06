@@ -1,0 +1,4 @@
+/Users/max/oclint_source-0.13.1/Driver_proj/CMakeFiles/oclint-0.13.1.dir
+/Users/max/oclint_source-0.13.1/Driver_proj/CMakeFiles/ALL_BUILD.dir
+/Users/max/oclint_source-0.13.1/Driver_proj/CMakeFiles/ZERO_CHECK.dir
+/Users/max/oclint_source-0.13.1/Driver_proj/lib/CMakeFiles/OCLintDriver.dir

@@ -1,0 +1,32 @@
+# Optional modules
+oclint-json-compilation-database/
+oclint-xcodebuild/
+
+# Third-party dependencies and build directory
+countly/
+googletest/
+llvm/
+build/
+
+# Compile Commands
+compile_commands.json
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+
+# Compiled Python Objects
+*.pyc
+
+# System files
+.DS_Store
