@@ -1,5 +1,3 @@
-[toc]
-
 OClint 环境部署与自定义规则
 ==
 
@@ -308,7 +306,7 @@ public:
 static RuleSet rules(new VariableNameRule());
 ```
 
-##### 第三步：使用自定义规则
+##### 第四步：使用自定义规则
 
 修改自定义规则后就需要编译，成功后在 Products 目录下会看到对应名称的 CustomLintRulesRule.dylib 文件，需要复制到 /Documents/oclint/oclint-release/lib/oclint/rules 即可。
 
@@ -316,7 +314,7 @@ Scheme:ALL BUILD 会编译所有规则，可以把设置成Release,这样编译�
 
 无论是debug包还是release都可以正常链接使用
 
-##### 第三步：如何调试
+##### 五：如何调试
 
 1. 参考第二步生成Driver xcode工程：
 
